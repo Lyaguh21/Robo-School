@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static 'reg_aut.css' %}'>
+    <script src='main.js'></script>
+</head>
+<body>
+     <div class="mainbox" >
+        <h1  id="logo">ROBO SCHOOL</h1>
+
+
+        <form action="" method="post" id = registration_form>
+            <input type="email" id = "email" placeholder="E-mail">
+            <input type="password" id = "password" placeholder="Password">
+            <div class="buttons">
+                <button type="button" id = "registration_mini_button"><a href=" {% url 'registration' %} ">Регистрация</a></button>
+                <button type="button" id = "enter_mini_button">Войти</button>
+            </div>
+            <a href="{% url "main" %}" id="back_button_in_auth">Назад</a>
+        </form>
+     </div>
+</body>
+</html> 

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static 'main.css' %} '>
+    <title>ROBO SCHOOL</title>
+</head>
+<body>
+    <div id="first_display">
+        <header>
+            <ul id="header_list">
+                <li id="header_logo"><b>ROBO.SCHOOL</b></li>
+                <li id="about_school">О школе</li>
+                <li id="about_coaches">Тренеры</li>
+                <li id="about_cost">Стоимость</li>
+                <li id="login"><a href='{% url 'authorization' %}'><b>Войти</b></a></li>
+            </ul>
+        </header>
+        <div id="lside">
+            <h1 id="first_display_logo">ROBO SCHOOL</h1>
+            <p id="first_display_text">Курсы повышения квалификации по робототехнике<br> для педагогов начальной школы</p>
+            <button id="inscribe"><b>Записаться на курс</b></button>
+        </div>
+        <div id="rside">
+            <img src='{% static 'img/Ellipse 29.png' %}' id="ellipse">
+            <img src='{% static 'img/portrait-smiling-nostalgic-female-student-looking-upper-left-corner-holding-notebooks 1.png' %}' id="woman">
+            
+        </div>
+    </div>
+    <div id="second_display">
+        
+    </div>
+</body> 
+</html>

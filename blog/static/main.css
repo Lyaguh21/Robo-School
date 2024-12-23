@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+body {
+    padding: 0%
+}
+header{
+    position: absolute;
+    top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#first_display {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color:#141024 ;
+    height: 835px;
+}
+#header_logo {
+    font-family: "Jost";
+    color: white;
+    width: 228px;
+    margin-top: 100px;
+    font-size: 30px;
+    
+}
+#header_list {
+    color: white;
+    font-family: "Jost";
+    font-size: 20px;
+    list-style: none;
+    margin-top: 30px;
+    
+}
+#header_list li {
+    display: inline;
+    margin-right: 50px;
+}
+
+#about_school {
+    margin-left: 330px;
+}
+#login {
+    margin-left: 26vw;
+}
+#woman {
+    margin-top: 195px;
+    margin-left: 20vw;
+    position: absolute;
+    z-index: 2;
+    height: 640px;
+    width: 360px;
+}
+#ellipse {
+    width: 548px;
+    height: 548px;
+    margin-top: 260px;
+    margin-left: 15vw;
+    position: absolute;
+    z-index: 1;
+}
+#lside {
+    display: inline;
+    float: left;
+}
+#first_display_logo {
+    font-family: "Jost";
+    color: white;
+    font-size: 70px;
+    margin-left: 15vw;
+    margin-top: 300px;
+}
+
+#first_display_text {
+    font-family: "Jost";
+    color: white;
+    font-size: 20px;
+    margin-left: 15vw;
+    margin-top: 30px;
+}
+#inscribe{
+    margin-left: 15vw;
+    margin-top: 50px;
+    background-color: #D52027;
+    width: 260px;
+    height: 79px;
+    color: white;
+    font-family: "Jost";
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#inscribe:hover{
+    background-color: #EBEBEB;
+    color:  #D52027;
+    border-color: #D52027;
+}
+#inscribe:active{
+    border-color: #D52027;
+    background-color: white;
+    color: #D52027;
+}
+#second_display {
+    background-color: white;
+    margin-top: 1080px;
+    height: 4000px;
+}
