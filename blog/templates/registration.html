@@ -1,4 +1,6 @@
 {% load static %}
+{% load widget_tweaks %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +16,17 @@
         <h1  id="logo">ROBO SCHOOL</h1>
 
 
-        <form action="" method="post" id = registration_form>
-            <input type="email" id = "email" placeholder="E-mail">
+        <form method="post">     
+            {% csrf_token %}  
+            {{ email.email }}
+            <label for='email'></label>
+            <input type='email' id = "email" placeholder= "E-mail">
+            {{ password.password }}
+            <label for='password'></label>
             <input type="password" id = "password" placeholder="Password">
-            <button type="button" id = "registration_button"><b>Зарегестрироваться</b></button>
+            <button type="submit" id = "registration_button"><b>Зарегестрироваться</b></button>
             <a href="{% url "authorization" %}" id="back_button_in_registr">Назад</a>
-        </form>
+        </form>        
        
      </div>
 </body>
