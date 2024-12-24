@@ -5,7 +5,7 @@ def main(request):
 	return render(request, 'main.html')
  
 def registration(request):
-	
+
 	context = {
 		'email': user_email_Form(),
 		'password': user_password_Form()
@@ -15,4 +15,9 @@ def registration(request):
 
 def authorization(request):
 
-	return render(request, 'authorization.html')
+	context = {
+		'email': user_email_Form(),
+		'password': user_password_Form()
+			}
+
+	return render(request, 'authorization.html', context)
