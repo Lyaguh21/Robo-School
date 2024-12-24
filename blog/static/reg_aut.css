@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: "Jost";
+    background-color: #141024;
+    background-size: cover;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+.mainbox {
+    background-color: white;
+    height: 650px;
+    width: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 39px;
+    
+}
+#logo {
+    top: 155px;
+    position: absolute;
+    
+    font-size: 54px;
+
+}
+
+#title_register {
+        
+    top: 270px;
+    position: absolute;
+}
+
+#title_authorization {
+    top: 270px;
+    position: absolute; 
+
+}
+
+
+#email {
+    width: 380px;
+    height: 56px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 100px;   
+    border-color: black;
+    background-color: #EBEBEB;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-family: "Jost";
+}
+#password {
+    width: 380px;
+    height: 56px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    border-color: black;
+    background-color: #EBEBEB;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-family: "Jost";
+
+}
+
+#registration_button {
+    font-family: "Jost";
+    width: 410px;
+    height: 79px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #D52027;
+    color: white;
+    font-size: 29px;
+    border-radius: 20px;
+    border-color: #D52027;
+    text-decoration: none;
+}
+
+#registration_button:hover {
+    background-color: #EBEBEB;
+    color:  #D52027;
+    border-color: #D52027;
+}
+#registration_button:active {
+    border-color: #D52027;
+    background-color: white;
+    color: #D52027;
+
+}
+
+
+
+#registration_mini_button {
+    width: 200px;
+    height: 79px;
+    margin-left: 120px;
+    margin-right: 5px;
+    margin-top: 30px;
+    font-size: 29px;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Jost";
+    text-decoration: none;
+
+}
+#registration_mini_button:hover {
+
+    border-color: black;
+    background-color: #EBEBEB;
+
+}   
+
+#registration_mini_button:active {
+
+    background-color: white;
+
+}   
+
+
+#enter_mini_button {
+    width: 200px;
+    height: 79px;
+    margin-left: 0px;
+    margin-right: 120px;
+    margin-top: 30px;
+    background-color: #D52027;
+    border-color: #D52027;
+    color: white;
+    font-size: 29px;
+    font-family: "Jost";
+    text-decoration: none;
+}
+
+#enter_mini_button:hover {
+    background-color: #EBEBEB;
+    color: #D52027;
+
+}
+
+#enter_mini_button:active {
+   border-color: #D52027;
+    background-color: white;
+    color: #D52027;
+}
+
+#back_button_in_registr{
+    color: black;
+    font-size: 30px;
+    font-family: "Jost";
+    margin-top: 130px;
+    margin-left: 290px;
+
+}
+#back_button_in_auth {
+    color: black;
+    font-size: 30px;
+    font-family: "Jost";
+    margin-left: 287px;
+    
+}
+
+
+.buttons {
+    display: flex;
+    margin-bottom: 30px;
+}
+

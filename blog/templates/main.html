@@ -1,0 +1,99 @@
+{% load static %}
+{% load livereload_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static 'main.css' %} '>
+    <title>ROBO SCHOOL</title>
+    {% livereload_script %}
+</head>
+<body>
+    <div id="first_display">
+        <header>
+            <ul id="header_list">
+                <li id="header_logo"><b>ROBO.SCHOOL</b></li>
+                <li id="about_school"><a href="#text_second_display">О школе</a></li>
+                <li id="about_coaches"><a href="">Тренеры</a></li>
+                <li id="about_cost"><a href="">Стоимость</a></li>
+                <li id="login"><a href='{% url 'authorization' %}'><b>Войти</b></a></li>
+            </ul>
+        </header>
+        <div id="lside">
+            <h1 id="first_display_logo">ROBO SCHOOL</h1>
+            <p id="first_display_text">Курсы повышения квалификации по робототехнике<br> для педагогов начальной школы</p>
+            <button id="inscribe"><b>Записаться на курс</b></button>
+        </div>
+        <div id="rside">
+            <img src='{% static 'img/Ellipse 29.png' %}' id="ellipse">
+            <img src='{% static 'img/portrait-smiling-nostalgic-female-student-looking-upper-left-corner-holding-notebooks 1.png' %}' id="woman">
+        </div>
+    </div>
+    <div id="second_display">
+        <p id="text_second_display">
+            <b>Robo School</b> – учреждение для формирования кадрового<br>педагогического резерва в сфере робототехники<br>и программирования
+        </p>
+        <ul id="big_number_list">
+            <li>10</li>
+            <li>20</li>
+            <li>100</li>
+            <li>10 000</li>
+        </ul>
+        <div id="small_text_list">
+            <div id="first_block" class="block_of_list">
+                <p>УМК по различным<br>направлениям по робототехнике</p>
+            </div>
+            <div id="second_block" class="block_of_list">
+                <p>Школ, в которых запущена робототехника</p>
+            </div>
+            <div id="third_block" class="block_of_list">
+                <p>Педагогов прошедших курсы повышения квалификации</p>
+            </div>
+            <div id="forty_block" class="block_of_list">
+                <p>Обученных детей на базе собственных центров</p>
+            </div>
+        </ul>
+    </div>
+    <div id="third_display">
+        <h1 id="main_text_third_display">Что вы получите после курса</h1>
+        <div id="list_third_display">
+            <div id="first_block_third_display">
+                <ul>
+                    <li class="big_text_list2">Удостоверение</li>
+                    <li class="mini_text_list2">Дающее право преподавать робототехнику<br>для детей 6-12 лет в образовательных<br>учреждениях</li>
+                </ul>
+            </div>
+            <div id="second_block_third_display">
+                <ul>
+                    <li class="big_text_list2">Знания</li>
+                    <li class="mini_text_list2">По основам разработки учебно-<br>методических комплексов<br>по робототехнике и программированию</li>
+                </ul>
+            </div>
+            <div id="third_block_third_display">
+                <ul>
+                    <li class="big_text_list2">Практику<button id="button_info">i</button><span id="tooltip_text">При наличии свободных мест</span></li>
+                    <li class="mini_text_list2">Возможность пройти практику<br>по преподаванию робототехники на базе<br>R:ED LAB (в оффлайн или онлайн формате)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="forty_display">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><h2>1</h2><h3>1Cлайд</h3></div>
+                <div class="slide">Слайд 2: Описание 2</div>
+                <div class="slide">Слайд 3: Описание 3</div>
+            <div class="slide">Слайд 4: Описание 4</div>
+          <div class="slide">Слайд 5: Описание 5</div>
+            </div>
+        </div>
+        <button id="prevBtn">Назад</button>
+        <button id="nextBtn">Вперед</button>
+        <script src="{% static 'inf_slider.js' %}"></script>
+    </div>
+</body> 
+</html>
