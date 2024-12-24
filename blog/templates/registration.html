@@ -1,14 +1,16 @@
 {% load static %}
-
+{% load livereload_tags %}
 <!DOCTYPE html>
 <html>
 <head>
+    {% load livereload_tags %}
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Registration</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='{% static 'reg_aut.css' %}'>
     <script src='main.js'></script>
+    {% livereload_script %}
 </head>
 <body>
      <div class="mainbox" >

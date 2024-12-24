@@ -1,4 +1,5 @@
 {% load static %}
+{% load livereload_tags %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='{% static 'reg_aut.css' %}'>
     <script src='main.js'></script>
+    {% livereload_script %}
 </head>
 <body>
      <div class="mainbox" >
@@ -23,8 +25,10 @@
             <label for='password'></label>
             <input type="password" id = "password" placeholder="Password">
             <div class="buttons">
+
                 <button type="button" id = "registration_mini_button"><a href=" {% url 'registr' %} ">Регистрация</a></button>
                 <button type="submit" id = "enter_mini_button">Войти</button>
+
             </div>
             <a href="{% url "main" %}" id="back_button_in_auth">Назад</a>
         </form>
