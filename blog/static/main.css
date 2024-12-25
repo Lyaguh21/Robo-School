@@ -150,13 +150,7 @@ header{
     margin-left: 15vw;
     margin-top: 10vh;
 }
-#text_second_display::before{
-    display: block;
-    content: "";
-    margin-top: -75px;
-    height: 75px;
-    visibility: hidden;
-}
+
 #big_number_list{
     font-weight:bold;
     color: #D52027;
@@ -273,25 +267,135 @@ header{
     height: 1500px;
     margin-top: 600px;
 }
+#main_text_forty_display{
+    font-family: "Jost";
+    font-size: 50px;
+    font-weight: 600px;
+    color: #141024;
+    margin-left: 15vw;
+    margin-top: 700px;
+}
+
 .slider {
     position: relative;
     overflow: hidden;
-    width: 900px; /* Ширина слайдера */
-    height: 200px; /* Высота слайдера */
-    margin: 20px auto;
-    border: 1px solid #ccc;
+    width: 1310px; /* Ширина слайдера */
+    height: 670px; /* Высота слайдера */
+    /* background-color: yellow; */
+}
+.minislider{
+    border-radius: 100px;
+    margin-left: 25px;
+    position: relative;
+    overflow: hidden;
+    width: 360px; /* Ширина слайдера */
+    height: 5px; /* Высота слайдера */
+    background-color: #14102414;
+    margin-top: 16px;
 }
 .slides {
     display: flex;
     transition: transform 0.5s ease;
 }
-.slide {
-    min-width: 300px; /* Ширина каждого слайда */
-    height: 200px; /* Высота каждого слайда */
+.slides_mini {
     display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 360px; /* Ширина каждого слайда */
+    height: 670px; /* Высота каждого слайда */
+    justify-content: center;
+    background-color: white;
+    margin-right: 65px;
+    margin-left: 25px;
+}
+
+.mini_slide{
+    border-radius: 100px;
+    min-width: 260px; /* Ширина каждого слайда */
+    height: 5px; /* Высота каждого слайда */
+    display: flex;  
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background-color: #141024;
+}
+.button{
+    margin-left: 790px;
+}
+.button_prev_next{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #141024;
+    color: white;   
+    border: 0;
+    margin-left: 10px;
+}
+.button_prev_next:hover{
+    background-color: #7e7b7b;
+}
+/* Стрелка вправо */
+.arrow-right-3{
+    margin-top: 2px;
+    margin-left: 3px;
+    width: 10px;
+    height: 19px;
+    cursor: pointer;
+    fill: white;
+    
+}
+.arrow-left-3{
+    margin-top: 2px;
+    margin-right: 2px;
+    width: 10px;
+    height: 19px;
+    cursor: pointer;
+    fill: white;
+    transform: rotate(180deg);
+}
+
+.second_slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+#slide_forty_display{
+    margin-left: 14vw;
+    margin-right: 14vw;
+    /* background-color: #D52027; */
+    height: 750px;
+    padding: 0 0 0 0;
+}
+.medium_text_coach{
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 0%;
+}
+.small_text_coach{
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.more_coaches{
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D52027;
+}
+#forty_coach{
+    border-radius: 20px;
 }

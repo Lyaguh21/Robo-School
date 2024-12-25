@@ -82,18 +82,64 @@
         </div>
     </div>
     <div id="forty_display">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><h2>1</h2><h3>1Cлайд</h3></div>
-                <div class="slide">Слайд 2: Описание 2</div>
-                <div class="slide">Слайд 3: Описание 3</div>
-            <div class="slide">Слайд 4: Описание 4</div>
-          <div class="slide">Слайд 5: Описание 5</div>
+        <h2 id="main_text_forty_display">Профессиональные тренеры</h2>
+        <div id="slide_forty_display">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src='{% static 'img\Irina Laim.jpg' %}' id="first_coach">
+                        <h3 class="medium_text_coach">Ирина Лайм</h3>
+                        <p class="small_text_coach">преподаватель по робототехнике</p>
+                        <a id="more_first_coaches" href="" class="more_coaches">Подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src='{% static 'img\Marina Orlova.jpg' %}' id="second_coach">
+                        <h3 class="medium_text_coach">Марина Орлова</h3>
+                        <p class="small_text_coach">преподаватель по робототехнике</p>
+                        <a id="more_second_coaches" href="" class="more_coaches">Подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src='{% static 'img\Max Petrov.jpg' %}' id="third_coach">
+                        <h3 class="medium_text_coach">Максим Петров</h3>
+                        <p class="small_text_coach">преподаватель по программированию</p>
+                        <a id="more_third_coaches" href="" class="more_coaches">Подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src='{% static 'img\Konstantin nazarov.jpg' %}' id="forty_coach">
+                        <h3 class="medium_text_coach">Константин Назаров</h3>
+                        <p class="small_text_coach">преподаватель по робототехнике</p>
+                        <a id="more_forty_coaches" href="" class="more_coaches">Подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src='{% static 'img\Liza Vesenaya.jpg' %}' id="fifty_coach">
+                        <h3 class="medium_text_coach">Лиза Весенняя</h3>
+                        <p class="small_text_coach">преподаватель по программированию</p>
+                        <a id="more_fifty_coaches" href="" class="more_coaches">Подробнее</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="second_slider">
+                <div class="minislider">
+                    <div class="slides_mini">
+                        <div class="mini_slide"></div>  
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="prevBtn" class="button_prev_next" type="button">
+                        <svg class="arrow-left-3" viewBox="0 0 5 9">
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                        </svg>
+                    </button>
+                    <button id="nextBtn" class="button_prev_next" type="button">
+                        <svg class="arrow-right-3" viewBox="0 0 5 9">
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                        </svg>
+                    </button>
+                    <script src='{% static "inf_slider.js" %}'></script>
+                </div>
             </div>
         </div>
-        <button id="prevBtn">Назад</button>
-        <button id="nextBtn">Вперед</button>
-        <script src="{% static 'inf_slider.js' %}"></script>
     </div>
 </body> 
 </html>
