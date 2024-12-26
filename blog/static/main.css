@@ -62,7 +62,7 @@ header{
     position: absolute;
     height: 1px;
     background: rgb(255, 255, 255);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 #header_list a::before{
     top: -5px; /* Линия сверху */
@@ -122,17 +122,18 @@ header{
     font-family: "Jost";
     font-size: 18px;
     border-radius: 5px;
+    border-color: #ff0b1400;
     transition: all 0.4s;
 }
 #inscribe:hover{
     background-color: #EBEBEB;
     color:  #D52027;
-    border-color: #D52027;
+    border: 3px solid #D52027;
 }
 #inscribe:active{
-    border-color: #D52027;
-    background-color: white;
-    color: #D52027;
+    border-color: #ffffff;
+    background-color: #D52027;
+    color: #ffffff;
 }
 /* second display */
 #second_display {
@@ -264,7 +265,7 @@ header{
 }
 /* forty display */
 #forty_display{
-    height: 1500px;
+    height: 1800px;
     margin-top: 600px;
 }
 #main_text_forty_display{
@@ -386,6 +387,10 @@ header{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
+#forty_coach{
+    border-radius: 20px;
+}
+/* ANIMATION <a> */
 .more_coaches{
     font-family: Jost;
     font-size: 18px;
@@ -396,6 +401,128 @@ header{
     text-decoration-skip-ink: none;
     color: #D52027;
 }
-#forty_coach{
+#slide_forty_display a{
+    text-decoration: none;
+    position: relative;
+}
+#slide_forty_display a::before,#slide_forty_display a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: #D52027;
+    transition: all 0.3s ease;
+}
+#slide_forty_display a::before{
+    top: -5px; /* Линия сверху */
+    left: 0;
+    width: 0;
+}
+#slide_forty_display a::after{
+    bottom: -5px; /* Линия снизу */
+    right: 0;
+    width: 0%;
+}
+#slide_forty_display a:hover::before,#slide_forty_display a:hover::after{
+    width: 100%; /* Линия сверху */
+}
+
+#service{
+    margin-left: 15vw;
+    margin-right: 17vw;
+    /* background-color: #D52027; */
+    height: 640px;
+}
+#main_text_service{
+    font-family: "Jost";
+    font-size: 50px;
+    font-weight: 600px;
+    color: #141024;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+#tariffs_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.tariff{
+    background-color: white;
+    border: 1px solid #14102433;   
     border-radius: 20px;
+    height: 460px;
+    width: 360px;   
+    align-items: center;
+    text-align: center;
+}
+.tariff h3{
+    font-family: "Jost";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 0;
+}
+.tariff h4{
+    font-family: "Jost";
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 0px; 
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.tariff p{
+    font-family: "Jost";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.tariff button{
+    width: Fixed (280px)px;
+    height: Hug (79px)px;
+    top: 3826px;
+    left: 420px;
+    padding: 25px 54px 25px 54px;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #D52027;
+    border: 0;
+    opacity: 0px;
+    font-family: "Jost";
+    color: white;
+    font-size:18px;
+}
+.tariff button:active{
+    border: 2px solid white;
+}
+.tariff:hover{
+    background-color: #141024;
+    color: white;
+    transition: all 0.4s linear;  
+    transform:scaleY(1.1);
+    z-index: 1;
+}
+.tariff:not(:hover){
+    transition: all 0.4s linear;
+}
+#robo{
+    margin-right: 95px;
+    margin-left: 95px;
+}
+#fixed_str{
+    width:100%;
+    height: 100%;
+    padding-top: 30px;
+}
+#fixed_str:hover *{
+  transform:scaleY(0.9);
+    
 }
