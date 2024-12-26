@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 from django.contrib import admin
-from blog.views import registration
 
 urlpatterns = [
 	path('', views.main, name='main'),

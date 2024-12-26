@@ -1,23 +1,31 @@
 from django.shortcuts import render
-from .forms import user_email_Form, user_password_Form
+from .models import registration_form
+from .forms import user_registration_Form
+
  
 def main(request):
 	return render(request, 'main.html')
  
-def registration(request):
 
+def registration(request):
 	context = {
-		'email': user_email_Form(),
-		'password': user_password_Form()
+		'registration_form': user_registration_Form,
 			}
+	
+	if request.method == 'POST':
+		if request.POST.get('email') and request.POST.get('password'):
+				post = registration_form()
+				post.user_email = request.POST.get('email')
+				post.user_password = request.POST.get('password')
+				post.save()
+	
 	
 	return render(request, 'registration.html', context)
 
 def authorization(request):
 
 	context = {
-		'email': user_email_Form(),
-		'password': user_password_Form()
+		'authorization_form': user_registration_Form,
 			}
 
 	return render(request, 'authorization.html', context)

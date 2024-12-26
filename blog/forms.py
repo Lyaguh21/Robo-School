@@ -1,9 +1,8 @@
 from django import forms
+from .models import registration_form
 
 
-class user_email_Form(forms.Form):
-    user_email = forms.EmailField(widget=forms.TextInput(attrs={"id" : 'email'}))
-
-
-class user_password_Form(forms.Form):
-    user_password = forms.IntegerField(widget=forms.NumberInput(attrs={"id" : 'password'}))
+class user_registration_Form(forms.ModelForm):
+    class Meta:
+        model = registration_form
+        fields = "__all__"

@@ -1,13 +1,9 @@
 from django.db import models
-from django.utils import timezone
-from django.contrib.auth.models import User
 
 
-class Post(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
-    date_posted = models.DateTimeField(default=timezone.now)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+class registration_form(models.Model):
+    user_email = models.EmailField(max_length= 20)
+    user_password = models.TextField(max_length= 20)
 
     def __str__(self):
-        return self.title
+        return f"{self.user_email}"
