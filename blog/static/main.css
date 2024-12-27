@@ -652,3 +652,100 @@ footer{
     text-decoration-skip-ink: none;
 
 }
+/* Модалка */
+.vmodal_second{
+    display: none;
+}
+
+.modal_overlay{
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1410244d;
+    z-index: 2;
+}
+.modal_window{
+    height: 768px;
+    width: 940px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 90px auto ;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Jost";
+}
+.modal_header{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.modal_nav{
+    padding-top: 20px;
+    width: 100%;
+}
+.modal_body{
+    height: 400px;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.right_header{
+    margin-left: 40px;
+}
+.photo_mini_coach{
+    margin-left: 35px;
+    height: 222px;
+    width: 160px;
+}
+.modal_close{
+    margin-top: 28px;
+    margin-left: 350px;
+}
+.massenger_link{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+.modal_nav ul{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    height: 50px;
+}
+.nav_link{
+    margin-top: 60px;
+    display: inline;
+}
+.nav_link a{
+    color: #141024;
+}
+#expirience{
+    margin-left: 240px;
+    margin-right: 240px;
+}
+.education_text{
+    overflow: auto;
+    height: 340px; 
+    width: 905px; 
+}
+.education_text::-webkit-scrollbar {
+    width: 5px;
+    height: 175px;
+    background-color:rgba(0, 0, 0, 0.158) ;
+    border-radius: 100px;
+  }
+  .education_text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #141024;
+  }
